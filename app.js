@@ -1,7 +1,7 @@
 
 let branches=[], products=[];
 
-fetch('data/branches.json').then(r=>r.json()).then(b=>{
+fetch('branches.json').then(r=>r.json()).then(b=>{
   branches=b;
   const s=document.getElementById('branchSelect');
   s.innerHTML='<option value="">-- اختر الفرع --</option>';
@@ -10,7 +10,7 @@ fetch('data/branches.json').then(r=>r.json()).then(b=>{
   });
 });
 
-fetch('data/products.json').then(r=>r.json()).then(p=>{
+fetch('products.json').then(r=>r.json()).then(p=>{
   products=p;
   const box=document.getElementById('products');
   p.forEach(pr=>{
